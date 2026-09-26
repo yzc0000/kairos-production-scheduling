@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kairos-production-scheduling"
+version = "0.1.0"
+description = "Industrial job-shop scheduling and production schedule simulation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  {name = "Ahmed Yazıcı", email = "ahmed.yzc16@gmail.com"}
+]
+dependencies = [
+  "simpy>=4.1,<5",
+  "ortools>=9.0",
+  "plotly>=5.0",
+  "pandas>=1.3",
+  "openpyxl>=3.0",
+  "click>=8.0",
+  "streamlit>=1.28",
+]
+
+[tool.setuptools.packages.find]
+include = ["factory_sim*", "kairos*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
