@@ -73,21 +73,36 @@ It executes **100 replications** with different random seeds and exports operati
 
 The stochastic experiment shows that all jobs can finish while uncertainty still creates a measurable increase in completion time. Each experiment is evaluated against the fixed schedule used for that experiment.
 
-## Interactive Gantt charts
+## Gantt chart previews
 
-The generated charts are self-contained Plotly HTML files. After cloning or downloading the repository, open the comparison pages in a browser; each page displays the planned and simulated charts together.
+GitHub displays the PNG previews below directly in the README.
 
-### Deterministic validation charts
+### Deterministic validation
 
-- [Kairos vs deterministic simulation](docs/demos/large_schedule_comparison.html)
-- [Kairos planned schedule](docs/demos/large_kairos_validation_schedule.html)
-- [Deterministic simulation schedule](docs/demos/large_sim_validation_schedule.html)
+**Kairos planned schedule**
 
-### Stochastic validation charts
+![Kairos planned schedule](docs/images/deterministic-kairos-gantt.png)
 
-- [Kairos baseline vs stochastic execution](docs/demos/large_stochastic_comparison.html)
-- [Kairos baseline schedule](docs/demos/large_kairos_stochastic_baseline.html)
-- [Stochastic simulation schedule](docs/demos/large_sim_stochastic_execution.html)
+**Simulation replay**
+
+![Deterministic simulation replay](docs/images/deterministic-simulation-gantt.png)
+
+### Stochastic validation
+
+**Kairos baseline schedule**
+
+![Kairos baseline schedule](docs/images/stochastic-kairos-gantt.png)
+
+**Stochastic simulation execution**
+
+![Stochastic simulation execution](docs/images/stochastic-simulation-gantt.png)
+
+## Interactive HTML charts
+
+The interactive Plotly versions are included in `docs/demos/`. GitHub shows HTML as source code rather than running it; clone or download the repository and open the comparison pages in a browser to interact with the charts.
+
+- [Deterministic comparison page](docs/demos/large_schedule_comparison.html)
+- [Stochastic comparison page](docs/demos/large_stochastic_comparison.html)
 
 ## Independent benchmark validation
 
@@ -149,6 +164,7 @@ factory_sim/       Discrete-event simulation, adapters, validation, and reportin
 src/validation/    Independent JSPLIB parser and feasibility checker
 examples/          Deterministic and stochastic end-to-end demonstrations
 docs/demos/        Generated interactive Gantt charts
+docs/images/       PNG previews displayed directly on GitHub
 tests/             Kairos and factory-simulation automated tests
 benchmarks/        Standard scheduling benchmark data
 ```
