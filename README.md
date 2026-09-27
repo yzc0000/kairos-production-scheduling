@@ -173,6 +173,4 @@ benchmarks/        Standard scheduling benchmark data
 
 Python, Google OR-Tools, SimPy, Plotly, Pandas, OpenPyXL, Streamlit, and pytest.
 
-## Author
 
-Ahmed Yazıcı
