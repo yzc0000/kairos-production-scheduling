@@ -1,6 +1,6 @@
 # Kairos: Production Scheduling and Simulation
 
-Kairos is a senior design project for industrial job-shop scheduling and schedule validation. It combines constraint programming with discrete-event simulation: the scheduler creates a production plan, the simulator executes that plan under deterministic or stochastic conditions, and the validation layer measures whether the plan remains feasible.
+Kairos is a design project for industrial flexible assembly job-shop scheduling and schedule validation. It combines constraint programming with discrete-event simulation: the scheduler creates a production plan, the simulator executes that plan under deterministic or stochastic conditions, and the validation layer measures whether the plan remains feasible.
 
 ## System workflow
 
